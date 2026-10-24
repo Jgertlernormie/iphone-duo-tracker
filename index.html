@@ -2,107 +2,161 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>iPhone Duo stock - UK Apple Stores</title>
-<meta name="description" content="Live iPhone Duo in-store pickup stock across UK Apple Stores, plus restock patterns.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05070f">
+<title>The Gertler iPhone Checker</title>
+<meta name="description" content="See which UK Apple Stores have the iPhone Duo for pick-up today, plus delivery dates and the best times to look.">
 <style>
-:root{--bg:#f5f5f7;--card:#fff;--ink:#1d1d1f;--mute:#6e6e73;--line:#e3e3e8;--yes:#1a8f3c;--yesbg:#e3f6e8;--no:#b8b8bf;--accent:#0071e3;--warn:#fff4d6;--warnink:#7a5600}
+:root{
+  --bg:#05070f;--bg2:#0a1024;--glass:rgba(255,255,255,.045);--glass2:rgba(255,255,255,.07);
+  --edge:rgba(140,190,255,.14);--ink:#e8eeff;--mute:#8a96b8;--dim:#4a5578;
+  --neon:#29ffc6;--neon2:#22d3ee;--glow:0 0 10px rgba(41,255,198,.55),0 0 22px rgba(34,211,238,.25);
+  --off:rgba(255,255,255,.05);--warn:#ffcc66;--bad:#ff6b8b;
+  --font:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI Variable","Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+}
 *{box-sizing:border-box}
-body{margin:0;font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
-.wrap{max-width:1080px;margin:0 auto;padding:16px}
-header h1{font-size:26px;margin:8px 0 2px;letter-spacing:-.02em}
+html{background:var(--bg)}
+body{margin:0;font:15px/1.5 var(--font);color:var(--ink);min-height:100vh;
+  background:radial-gradient(1200px 600px at 10% -10%,rgba(34,211,238,.13),transparent 60%),
+             radial-gradient(900px 500px at 110% 10%,rgba(124,92,255,.14),transparent 60%),
+             linear-gradient(180deg,var(--bg2),var(--bg) 420px);background-attachment:fixed;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 16px calc(20px + env(safe-area-inset-bottom))}
+header{padding:6px 0 4px}
+.eyebrow{font:600 11px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--neon2);opacity:.9}
+h1{font-size:30px;line-height:1.1;margin:10px 0 6px;letter-spacing:-.03em;font-weight:750;
+  background:linear-gradient(90deg,#fff 0%,#bfe9ff 45%,var(--neon) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 header p{margin:0;color:var(--mute)}
-.status{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
-.pill{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px}
-.pill b{font-weight:600}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--yes);margin-right:6px;vertical-align:middle}
-.dot.stale{background:#e0a100}
-.banner{background:#ffe1e1;color:#8a1010;border:2px dashed #d33;border-radius:12px;padding:10px 14px;font-weight:700;margin:12px 0;text-align:center}
-.note{background:var(--warn);color:var(--warnink);border-radius:12px;padding:10px 14px;font-size:13px;margin:12px 0}
-h2{font-size:19px;margin:26px 0 10px;letter-spacing:-.01em}
-h3.region{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:18px 0 6px}
-.grid-mcr{display:grid;grid-template-columns:1fr;gap:12px}
-@media(min-width:760px){.grid-mcr{grid-template-columns:1fr 1fr}}
-.card{background:var(--card);border-radius:16px;padding:14px;border:1px solid var(--line)}
-.card.instock{border-color:var(--yes);box-shadow:0 0 0 2px var(--yesbg)}
-.card h4{margin:0;font-size:17px}
-.card .sub{color:var(--mute);font-size:13px;margin:2px 0 10px}
-table.tick{width:100%;border-collapse:separate;border-spacing:4px;table-layout:fixed}
-table.tick th{font-size:11px;color:var(--mute);font-weight:600;text-align:center}
-table.tick th.row{text-align:left;width:82px}
-table.tick td{text-align:center;border-radius:8px;height:38px;font-size:18px;background:#f2f2f5;color:var(--no)}
-table.tick td.y{background:var(--yesbg);color:var(--yes);font-weight:700}
-table.tick td.y a{color:inherit;text-decoration:none;display:block}
+.status{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
+.pill{background:var(--glass);border:1px solid var(--edge);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--mute);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.pill b{color:var(--ink);font-weight:650}
+.live{position:relative;display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--neon);margin-right:8px;vertical-align:1px;box-shadow:0 0 8px var(--neon)}
+.live::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--neon);animation:pulse 2s ease-out infinite}
+.live.stale{background:var(--warn);box-shadow:0 0 8px var(--warn)}.live.stale::after{background:var(--warn)}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+@media (prefers-reduced-motion:reduce){.live::after{animation:none}}
+.banner{background:rgba(255,107,139,.12);color:#ffc2cf;border:1px dashed var(--bad);border-radius:14px;padding:10px 14px;font-weight:700;margin:12px 0;text-align:center}
+.note{background:rgba(255,204,102,.08);border:1px solid rgba(255,204,102,.25);color:#ffe2a8;border-radius:14px;padding:10px 14px;font-size:13px;margin:12px 0}
+h2{font-size:13px;margin:30px 0 12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:650;display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--edge),transparent)}
+h3.region{font:600 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--dim);margin:20px 0 8px}
+.card{background:linear-gradient(180deg,var(--glass2),var(--glass));border:1px solid var(--edge);border-radius:18px;padding:16px;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 10px 30px rgba(0,0,0,.25)}
+.card.instock{border-color:rgba(41,255,198,.55);box-shadow:0 0 0 1px rgba(41,255,198,.25),0 0 28px rgba(41,255,198,.15)}
+.card h4{margin:0;font-size:17px;font-weight:650;letter-spacing:-.01em}
+.sub{color:var(--mute);font-size:13px;margin:3px 0 12px}
+.yes{color:var(--neon);font-weight:650;text-shadow:0 0 10px rgba(41,255,198,.4)}
+.grid2{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr}}
+table.tick{width:100%;border-collapse:separate;border-spacing:5px;table-layout:fixed}
+table.tick th{font:600 10px/1 var(--mono);color:var(--dim);text-align:center;letter-spacing:.06em}
+table.tick th.row{text-align:left;width:76px;font:500 12px/1.2 var(--font);color:var(--mute);letter-spacing:0}
+table.tick td{text-align:center;border-radius:10px;height:40px;font-size:16px;background:var(--off);color:var(--dim);border:1px solid rgba(255,255,255,.04)}
+table.tick td.y{background:rgba(41,255,198,.14);color:var(--neon);border-color:rgba(41,255,198,.6);box-shadow:var(--glow);font-weight:800}
+table.tick td.y a{color:inherit;text-decoration:none;display:block;line-height:40px}
+.hint{margin-top:12px;padding-top:12px;border-top:1px solid var(--edge);font-size:13px;color:var(--mute);display:flex;gap:8px}
+.hint .ic{color:var(--neon2)}
+.best{display:flex;gap:12px;align-items:flex-start}
+.best .ic{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.35);color:var(--neon2);font-size:17px}
+.best p{margin:2px 0 0;color:var(--ink)}
+.best small{color:var(--mute)}
 .list{display:grid;grid-template-columns:1fr;gap:8px}
 @media(min-width:760px){.list{grid-template-columns:1fr 1fr}}
-.row-store{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;align-items:center;gap:10px}
+.row-store{background:var(--glass);border:1px solid var(--edge);border-radius:14px;padding:11px 12px;display:flex;align-items:center;gap:10px}
+.row-store.instock{border-color:rgba(41,255,198,.5);box-shadow:0 0 18px rgba(41,255,198,.12)}
 .row-store .nm{flex:1;min-width:0}
-.row-store .nm b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row-store .nm b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
 .row-store .nm span{font-size:12px;color:var(--mute)}
-.mini{display:grid;grid-template-columns:repeat(4,18px);gap:3px}
-.mini i{width:18px;height:18px;border-radius:5px;background:#ececf0;display:block}
-.mini i.y{background:var(--yes)}
-.nc{font-size:12px;color:var(--mute);background:#f0f0f3;border-radius:999px;padding:4px 10px;white-space:nowrap}
-.key{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mute);margin:6px 0}
-.key i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:4px;background:#ececf0}
-.key i.y{background:var(--yes)}
-.toggle{font-size:14px;margin:4px 0 8px;display:flex;align-items:center;gap:8px}
+.row-store .nm em{display:block;font-style:normal;font-size:12px;color:var(--neon2);margin-top:2px}
+.mini{display:grid;grid-template-columns:repeat(4,16px);gap:4px}
+.mini i{width:16px;height:16px;border-radius:5px;background:var(--off);border:1px solid rgba(255,255,255,.06);display:block}
+.mini i.y{background:var(--neon);border-color:var(--neon);box-shadow:var(--glow)}
+.nc{font:500 11px/1 var(--mono);color:var(--dim);border:1px dashed rgba(140,190,255,.2);border-radius:999px;padding:6px 10px;white-space:nowrap}
+.key{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--mute);margin:0 0 6px}
+.key i{display:inline-block;width:12px;height:12px;border-radius:4px;vertical-align:-2px;margin-right:5px;background:var(--off);border:1px solid rgba(255,255,255,.08)}
+.key i.y{background:var(--neon);box-shadow:var(--glow)}
+.toggle{font-size:14px;margin:6px 0 4px;display:flex;align-items:center;gap:8px;color:var(--mute)}
+.toggle input{accent-color:var(--neon)}
+.deliv{display:grid;grid-template-columns:1fr;gap:0}
+.deliv .d{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--edge)}
+.deliv .d:last-child{border-bottom:0}
+.sw{flex:none;width:14px;height:14px;border-radius:50%;border:1px solid rgba(255,255,255,.3)}
+.sw.ns{background:linear-gradient(135deg,#3a4670,#121a33)}
+.sw.sw-w{background:linear-gradient(135deg,#fff,#cfd6e6)}
+.deliv .m{flex:1;min-width:0}
+.deliv .m b{font-weight:600}
+.deliv .m span{display:block;font-size:12px;color:var(--mute)}
+.deliv .when{font:600 13px/1.2 var(--mono);color:var(--neon2);text-align:right;white-space:nowrap}
+.deliv .when small{display:block;font:400 11px var(--font);color:var(--mute)}
 .charts{display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:760px){.charts{grid-template-columns:3fr 2fr}}
-.bars{display:flex;align-items:flex-end;gap:2px;height:120px;padding-top:8px}
-.bars div{flex:1;background:var(--accent);border-radius:3px 3px 0 0;min-height:2px;opacity:.85;position:relative}
-.bars div.z{background:#e1e1e6}
-.axis{display:flex;gap:2px;font-size:10px;color:var(--mute)}
+.bars{display:flex;align-items:flex-end;gap:3px;height:120px;padding-top:10px}
+.bars div{flex:1;border-radius:4px 4px 0 0;min-height:3px;background:linear-gradient(180deg,var(--neon),var(--neon2));box-shadow:0 0 12px rgba(34,211,238,.35)}
+.bars div.z{background:rgba(255,255,255,.06);box-shadow:none}
+.axis{display:flex;gap:3px;font:10px var(--mono);color:var(--dim);margin-top:4px}
 .axis span{flex:1;text-align:center}
-.stat{font-size:28px;font-weight:700;letter-spacing:-.02em}
+.stat{font:700 28px/1.1 var(--mono);letter-spacing:-.02em;color:var(--ink)}
+.statl{color:var(--mute);font-size:13px;margin-bottom:12px}
 table.hist{width:100%;border-collapse:collapse;font-size:13px}
-table.hist th,table.hist td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line)}
-table.hist th{color:var(--mute);font-weight:600;font-size:12px}
-.empty{color:var(--mute);font-size:14px;padding:8px 0}
-footer{color:var(--mute);font-size:12px;margin:30px 0 20px;line-height:1.6}
-a{color:var(--accent)}
+table.hist th,table.hist td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--edge)}
+table.hist th{color:var(--dim);font:600 10px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.empty{color:var(--mute);font-size:14px;padding:6px 0}
+footer{color:var(--dim);font-size:12px;margin:34px 0 10px;line-height:1.7}
+a{color:var(--neon2)}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
-  <h1>iPhone Duo stock</h1>
-  <p>In-store pickup at UK Apple Stores, checked every 5 minutes.</p>
+  <div class="eyebrow">Live iPhone Duo stock</div>
+  <h1>The Gertler iPhone Checker</h1>
+  <p>See which UK Apple Stores have the iPhone Duo to pick up today. We check every 5 minutes.</p>
 </header>
 <div id="example"></div>
-<div class="status" id="status"><span class="pill">Loading…</span></div>
+<div class="status" id="status"><span class="pill">Loading the latest stock...</span></div>
 <div id="coverage"></div>
 
+<h2>Best time to look</h2>
+<div class="card" id="bestOverall"></div>
+
 <h2>Manchester</h2>
-<div class="grid-mcr" id="mcr"></div>
+<div class="grid2" id="mcr"></div>
+
+<h2>Delivery dates</h2>
+<div class="card"><div class="sub" id="delivSub" style="margin-top:0"></div><div class="deliv" id="deliv"></div></div>
 
 <h2>All UK Apple Stores</h2>
-<div class="key"><span><i class="y"></i>In stock</span><span><i></i>Out of stock</span><span>Each square: top row Night Sky, bottom row Star White, 256GB → 2TB left to right</span></div>
+<div class="key"><span><i class="y"></i>In stock</span><span><i></i>Out of stock</span><span>Top row: Night Sky. Bottom row: Star White. Storage goes from 256GB to 2TB, left to right.</span></div>
 <label class="toggle"><input type="checkbox" id="onlyStock"> Only show stores with stock</label>
 <div id="uk"></div>
 
-<h2>Restock patterns</h2>
+<h2>When stock turns up</h2>
 <div class="charts">
-  <div class="card"><h4>When stock lands (time of day, UK)</h4><div class="bars" id="byHour"></div><div class="axis" id="hourAxis"></div></div>
-  <div class="card"><h4>By day of week</h4><div class="bars" id="byDay"></div><div class="axis" id="dayAxis"></div></div>
+  <div class="card"><h4>Time of day (UK time)</h4><div class="bars" id="byHour"></div><div class="axis" id="hourAxis"></div></div>
+  <div class="card"><h4>Day of the week</h4><div class="bars" id="byDay"></div><div class="axis" id="dayAxis"></div></div>
 </div>
 <div class="charts" style="margin-top:12px">
-  <div class="card"><h4>Restock history</h4><div id="hist"></div></div>
-  <div class="card"><h4>At a glance</h4><div id="glance"></div></div>
+  <div class="card"><h4>Recent restocks</h4><div id="hist"></div></div>
+  <div class="card"><h4>At a glance</h4><div id="glance" style="margin-top:10px"></div></div>
 </div>
 
 <footer>
-  Stock comes from Apple's public "pick up in store" information and can be up to 5 minutes behind, so very quick restocks can be missed. Always buy on <a href="https://www.apple.com/uk/shop/buy-iphone/iphone-duo" rel="noopener">Apple's site</a> and choose pick up in store.<br>
-  An independent hobby project - not made by or affiliated with Apple.
+  Stock information comes from Apple's website. It can be up to 5 minutes behind, so very quick restocks might be missed. Delivery dates are Apple's estimates and can change.<br>
+  To buy, go to <a href="https://www.apple.com/uk/shop/buy-iphone/iphone-duo" rel="noopener">Apple's website</a> and choose pick up in store.<br>
+  The Gertler iPhone Checker is a personal hobby project. It isn't made by or linked to Apple.
 </footer>
 </div>
 
 <script>
+const DATA_URL = "https://raw.githubusercontent.com/Jgertlernormie/iphone-duo-tracker/data/data.json";
 const TZ = "Europe/London";
 const fmtTime = iso => new Date(iso).toLocaleTimeString("en-GB",{timeZone:TZ,hour:"2-digit",minute:"2-digit"});
 const fmtDay = iso => new Date(iso).toLocaleDateString("en-GB",{timeZone:TZ,weekday:"short",day:"numeric",month:"short"});
 const esc = s => String(s ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const ago = iso => { const m = Math.round((Date.now()-new Date(iso))/60000); return m<1?"just now":m===1?"1 min ago":m<60?m+" mins ago":Math.round(m/60)+" hours ago"; };
+const ago = iso => { const m = Math.round((Date.now()-new Date(iso))/60000); const hr=Math.round(m/60); return m<1?"just now":m===1?"1 min ago":m<60?m+" mins ago":hr===1?"1 hour ago":hr+" hours ago"; };
+const NOT_ENOUGH = "Not enough restocks spotted yet - we'll show the best times once we've seen a few.";
 let DATA = null;
 
 function tickTable(store, models){
@@ -113,60 +167,80 @@ function tickTable(store, models){
     for(const s of sizes){
       const m=models.find(x=>x.colour===c&&x.storage===s);
       const y=m&&store.stock&&store.stock[m.part];
-      h+= y?`<td class="y" title="${esc(m.name)} in stock"><a href="${esc(m.link)}" rel="noopener">✓</a></td>`:`<td title="${m?esc(m.name):""} out of stock">–</td>`;
+      h+= y?`<td class="y" title="${esc(m.name)} - in stock, tap to buy"><a href="${esc(m.link)}" rel="noopener">✓</a></td>`:`<td title="${m?esc(m.name)+" - out of stock":""}">·</td>`;
     }
     h+='</tr>';
   }
   return h+'</table>';
 }
+const hourName = h => h===0?"midnight":h===12?"midday":(h%12)+(h<12?"am":"pm");
+const plural = v => v===1?"1 restock":v+" restocks";
 const inStock = s => s.stock && Object.values(s.stock).some(Boolean);
+const bestFor = id => (((DATA.best_chance||{}).stores||{})[id]) || null;
 
 function render(){
-  const d=DATA, models=d.models;
-  document.getElementById("example").innerHTML = d.example ? '<div class="banner">EXAMPLE DATA - mock-up only, not real stock</div>' : "";
+  const d=DATA, models=d.models||[];
+  document.getElementById("example").innerHTML = d.example ? '<div class="banner">EXAMPLE ONLY - this isn&#39;t real stock</div>' : "";
   const stale = d.last_checked && (Date.now()-new Date(d.last_checked)) > 15*60000;
   const nIn = d.stores.filter(inStock).length;
   document.getElementById("status").innerHTML =
-    `<span class="pill"><span class="dot ${stale?"stale":""}"></span>Last checked <b>${d.last_checked?fmtTime(d.last_checked)+" UK time":"never"}</b>${d.last_checked?" ("+ago(d.last_checked)+")":""}</span>`+
-    `<span class="pill"><b>${nIn}</b> of ${d.covered_count} checked stores have stock</span>`+
-    `<span class="pill">Covering <b>${d.covered_count}</b> of ${d.store_count} UK stores</span>`;
-  document.getElementById("coverage").innerHTML = (stale?'<div class="note">The last check was over 15 minutes ago, so this may be out of date.</div>':"")+
-    (d.covered_count<d.store_count?`<div class="note">Right now only ${d.covered_count} of ${d.store_count} UK stores are checked. Stores marked "Not covered yet" aren't being checked - we're working on it.</div>`:"");
+    (d.last_checked?`<span class="pill"><span class="live ${stale?"stale":""}"></span>Last checked <b>${fmtTime(d.last_checked)} UK time</b> · ${ago(d.last_checked)}</span>`:`<span class="pill"><span class="live stale"></span>Not checked yet</span>`)+
+    `<span class="pill">In stock at <b>${nIn}</b> of ${d.covered_count} stores</span>`+
+    `<span class="pill">Checking <b>${d.covered_count}</b> of ${d.store_count} UK stores</span>`;
+  document.getElementById("coverage").innerHTML = (stale?'<div class="note">We haven\'t checked for over 15 minutes, so this might be out of date.</div>':"")+
+    (d.covered_count<d.store_count?`<div class="note">We can check ${d.covered_count} of the ${d.store_count} UK stores at the moment. The others are marked "Not checked yet".</div>`:"");
 
-  document.getElementById("mcr").innerHTML = d.stores.filter(s=>s.manchester).map(s=>
-    `<div class="card ${inStock(s)?"instock":""}"><h4>Apple ${esc(s.name)}</h4><div class="sub">${esc(s.postcode)} · ${s.covered?(inStock(s)?"<b style='color:var(--yes)'>In stock now - tap a tick to buy</b>":"Nothing in stock right now"):"Not covered yet"}</div>${s.covered?tickTable(s,models):""}</div>`).join("");
+  const bo = (d.best_chance||{}).overall;
+  document.getElementById("bestOverall").innerHTML = `<div class="best"><div class="ic">◎</div><div><b>All stores</b><p>${esc(bo?bo.text:NOT_ENOUGH)}</p><small>Based only on restocks we've really spotted${d.history&&d.history.since?", since "+fmtDay(d.history.since):""}.</small></div></div>`;
+
+  document.getElementById("mcr").innerHTML = d.stores.filter(s=>s.manchester).map(s=>{
+    const b=bestFor(s.id);
+    return `<div class="card ${inStock(s)?"instock":""}"><h4>Apple ${esc(s.name)}</h4><div class="sub">${esc(s.postcode)} · ${s.covered?(inStock(s)?"<span class='yes'>In stock now - tap a tick to buy</span>":"Out of stock right now"):"Not checked yet"}</div>${s.covered?tickTable(s,models):""}`+
+      (s.covered?`<div class="hint"><span class="ic">◎</span><span>${esc(b?b.text:NOT_ENOUGH)}</span></div>`:"")+`</div>`;}).join("");
+
+  const withDel = models.filter(m=>m.delivery&&m.delivery.text);
+  document.getElementById("delivSub").innerHTML = withDel.length
+    ? `When Apple says it will deliver if you order online today${d.delivery_postcode?" (for postcode "+esc(d.delivery_postcode)+")":""}. Updated ${fmtTime(d.delivery_updated)} UK time · ${ago(d.delivery_updated)}.`
+    : "Delivery dates will show here after the next check.";
+  document.getElementById("deliv").innerHTML = models.map(m=>{
+    const dl=m.delivery||{}, opt=(dl.options||[])[0];
+    return `<div class="d"><span class="sw ${/white/i.test(m.colour)?"sw-w":"ns"}"></span><div class="m"><b>${esc(m.storage)} ${esc(m.colour)}</b><span>${esc(m.price||"")}</span></div>`+
+      `<div class="when">${dl.text?esc(dl.text):"Not known yet"}${opt&&opt.name?`<small>${esc(opt.name)}</small>`:""}</div></div>`;}).join("");
 
   const only=document.getElementById("onlyStock").checked;
   const rest=d.stores.filter(s=>!s.manchester && (!only||inStock(s)));
   const regions=[...new Set(rest.map(s=>s.region))];
   document.getElementById("uk").innerHTML = rest.length? regions.map(r=>`<h3 class="region">${esc(r)}</h3><div class="list">`+
     rest.filter(s=>s.region===r).map(s=>{
-      let right;
-      if(!s.covered) right='<span class="nc">Not covered yet</span>';
-      else right='<div class="mini" title="Top: Night Sky, bottom: Star White">'+models.map(m=>`<i class="${s.stock[m.part]?"y":""}" title="${esc(m.name)}"></i>`).join("")+'</div>';
-      return `<div class="row-store"><div class="nm"><b>Apple ${esc(s.name)}</b><span>${esc(s.postcode)}${s.covered?(inStock(s)?" · <b style='color:var(--yes);display:inline'>In stock</b>":" · Out of stock"):""}</span></div>${right}</div>`;
-    }).join("")+'</div>').join("") : '<div class="empty">No stores have stock right now.</div>';
+      const b=bestFor(s.id);
+      const right = !s.covered ? '<span class="nc">Not checked yet</span>'
+        : '<div class="mini" title="Top row: Night Sky. Bottom row: Star White.">'+models.map(m=>`<i class="${s.stock&&s.stock[m.part]?"y":""}" title="${esc(m.name)} - ${s.stock&&s.stock[m.part]?"in stock":"out of stock"}"></i>`).join("")+'</div>';
+      return `<div class="row-store ${inStock(s)?"instock":""}"><div class="nm"><b>Apple ${esc(s.name)}</b><span>${esc(s.postcode)}${s.covered?(inStock(s)?" · <span class='yes'>In stock</span>":" · Out of stock"):""}</span>${b&&b.pattern?`<em>◎ ${esc(b.text)}</em>`:""}</div>${right}</div>`;
+    }).join("")+'</div>').join("") : '<div class="empty">No stores have stock right now. Check back soon.</div>';
 
   const h=d.history, maxH=Math.max(1,...h.by_hour), dayVals=Object.values(h.by_day), maxD=Math.max(1,...dayVals);
-  document.getElementById("byHour").innerHTML=h.by_hour.map((v,i)=>`<div class="${v?"":"z"}" style="height:${v/maxH*100}%" title="${i}:00 - ${v} restocks"></div>`).join("");
-  document.getElementById("hourAxis").innerHTML=h.by_hour.map((_,i)=>`<span>${i%3===0?i:""}</span>`).join("");
-  document.getElementById("byDay").innerHTML=dayVals.map((v,i)=>`<div class="${v?"":"z"}" style="height:${v/maxD*100}%" title="${v} restocks"></div>`).join("");
+  document.getElementById("byHour").innerHTML=h.by_hour.map((v,i)=>`<div class="${v?"":"z"}" style="height:${v/maxH*100}%" title="${hourName(i)} to ${hourName((i+1)%24)}: ${plural(v)}"></div>`).join("");
+  document.getElementById("hourAxis").innerHTML=h.by_hour.map((_,i)=>`<span>${i%6===0?(i===0?"12am":i===12?"12pm":(i%12)+(i<12?"am":"pm")):""}</span>`).join("");
+  document.getElementById("byDay").innerHTML=dayVals.map((v,i)=>`<div class="${v?"":"z"}" style="height:${v/maxD*100}%" title="${Object.keys(h.by_day)[i]}: ${plural(v)}"></div>`).join("");
   document.getElementById("dayAxis").innerHTML=Object.keys(h.by_day).map(k=>`<span>${k}</span>`).join("");
   const sName=id=>(d.stores.find(s=>s.id===id)||{name:id}).name, mName=p=>((models.find(m=>m.part===p)||{}).name||p).replace("iPhone Duo ","");
   document.getElementById("hist").innerHTML = h.restocks.length? '<table class="hist"><tr><th>When</th><th>Store</th><th>Model</th><th>Lasted</th></tr>'+
-    h.restocks.slice(0,15).map(e=>`<tr><td>${fmtDay(e.start)}, ${fmtTime(e.start)}</td><td>${esc(sName(e.store))}</td><td>${esc(mName(e.part))}</td><td>${e.ongoing?"<b style='color:var(--yes)'>In stock now</b>":e.minutes<5?"under 5 mins":e.minutes+" mins"}</td></tr>`).join("")+'</table>'
-    : `<div class="empty">No restocks seen yet. Checking since ${h.since?fmtDay(h.since)+", "+fmtTime(h.since)+" UK time":"-"}.</div>`;
+    h.restocks.slice(0,15).map(e=>`<tr><td>${fmtDay(e.start)}, ${fmtTime(e.start)}</td><td>${esc(sName(e.store))}</td><td>${esc(mName(e.part))}</td><td>${e.ongoing?"<span class='yes'>In stock now</span>":e.minutes<5?"Under 5 mins":e.minutes+" mins"}</td></tr>`).join("")+'</table>'
+    : `<div class="empty">No restocks spotted yet.${h.since?" We've been checking since "+fmtDay(h.since)+", "+fmtTime(h.since)+" UK time.":""}</div>`;
   document.getElementById("glance").innerHTML =
-    `<div class="stat">${h.restocks.length}</div><div class="sub" style="color:var(--mute)">restocks seen</div>`+
-    `<div class="stat" style="margin-top:10px">${h.median_minutes_in_stock==null?"-":h.median_minutes_in_stock+" mins"}</div><div style="color:var(--mute);font-size:13px">typical time before selling out</div>`+
-    `<div class="stat" style="margin-top:10px">${h.checks.toLocaleString("en-GB")}</div><div style="color:var(--mute);font-size:13px">checks made</div>`;
+    `<div class="stat">${h.restocks.length}</div><div class="statl">restocks spotted</div>`+
+    `<div class="stat">${h.median_minutes_in_stock==null?"None yet":h.median_minutes_in_stock+" mins"}</div><div class="statl">how long stock usually lasts</div>`+
+    `<div class="stat">${h.checks.toLocaleString("en-GB")}</div><div class="statl" style="margin:0">checks so far</div>`;
 }
 
 async function load(){
   try{
-    const r = await fetch("https://raw.githubusercontent.com/Jgertlernormie/iphone-duo-tracker/data/data.json?t="+Date.now(),{cache:"no-store"});
+    let src = DATA_URL;
+    const q = new URLSearchParams(location.search).get("data");
+    if (q && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) src = q.replace(/[^\w.\-\/]/g,"");  // local testing only
+    const r = await fetch(src+(src.includes("?")?"&":"?")+"t="+Date.now(),{cache:"no-store"});
     DATA = await r.json(); render();
-  }catch(e){ document.getElementById("status").innerHTML='<span class="pill">Couldn\'t load stock data - try refreshing.</span>'; }
+  }catch(e){ document.getElementById("status").innerHTML='<span class="pill">Couldn\'t load the latest stock. Please refresh the page.</span>'; }
 }
 document.getElementById("onlyStock").addEventListener("change",()=>DATA&&render());
 load(); setInterval(load, 60000);
