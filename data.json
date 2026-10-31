@@ -1,0 +1,1881 @@
+{
+ "example": false,
+ "generated_at": "2026-10-31T18:00:39+00:00",
+ "last_checked": "2026-10-31T18:00:38+00:00",
+ "check_every_minutes": 5,
+ "far_last_checked": "2026-10-31T17:08:49+00:00",
+ "far_last_attempt": "2026-10-31T17:08:49+00:00",
+ "far_ok": true,
+ "far_check_every_minutes": 60,
+ "nearby_count": 12,
+ "far_count": 27,
+ "models": [
+  {
+   "part": "MK2E4QN/A",
+   "name": "iPhone Duo 256GB Night Sky",
+   "storage": "256GB",
+   "colour": "Night Sky",
+   "price": "£1,999.00",
+   "link": "https://www.apple.com/uk/shop/buy-iphone/iphone-duo/7.6-inch-display-256gb-night-sky",
+   "delivery": {
+    "text": "Mon 25 Jan - Free",
+    "options": [
+     {
+      "name": "Express Delivery",
+      "date": "Mon 25 Jan",
+      "cost": "Free"
+     }
+    ],
+    "postcode": "M40 7TF"
+   }
+  },
+  {
+   "part": "MK2G4QN/A",
+   "name": "iPhone Duo 512GB Night Sky",
+   "storage": "512GB",
+   "colour": "Night Sky",
+   "price": "£2,199.00",
+   "link": "https://www.apple.com/uk/shop/buy-iphone/iphone-duo/7.6-inch-display-512gb-night-sky",
+   "delivery": {
+    "text": "Mon 25 Jan - Free",
+    "options": [
+     {
+      "name": "Express Delivery",
+      "date": "Mon 25 Jan",
+      "cost": "Free"
+     }
+    ],
+    "postcode": "M40 7TF"
+   }
+  },
+  {
+   "part": "MK2J4QN/A",
+   "name": "iPhone Duo 1TB Night Sky",
+   "storage": "1TB",
+   "colour": "Night Sky",
+   "price": "£2,599.00",
+   "link": "https://www.apple.com/uk/shop/buy-iphone/iphone-duo/7.6-inch-display-1tb-night-sky",
+   "delivery": {
+    "text": "Mon 25 Jan - Free",
+    "options": [
+     {
+      "name": "Express Delivery",
+      "date": "Mon 25 Jan",
+      "cost": "Free"
+     }
+    ],
+    "postcode": "M40 7TF"
+   }
+  },
+  {
+   "part": "MK2L4QN/A",
+   "name": "iPhone Duo 2TB Night Sky",
+   "storage": "2TB",
+   "colour": "Night Sky",
+   "price": "£3,199.00",
+   "link": "https://www.apple.com/uk/shop/buy-iphone/iphone-duo/7.6-inch-display-2tb-night-sky",
+   "delivery": {
+    "text": "Mon 25 Jan - Free",
+    "options": [
+     {
+      "name": "Express Delivery",
+      "date": "Mon 25 Jan",
+      "cost": "Free"
+     }
+    ],
+    "postcode": "M40 7TF"
+   }
+  },
+  {
+   "part": "MK2D4QN/A",
+   "name": "iPhone Duo 256GB Star White",
+   "storage": "256GB",
+   "colour": "Star White",
+   "price": "£1,999.00",
+   "link": "https://www.apple.com/uk/shop/buy-iphone/iphone-duo/7.6-inch-display-256gb-star-white",
+   "delivery": {
+    "text": "Mon 25 Jan - Free",
+    "options": [
+     {
+      "name": "Express Delivery",
+      "date": "Mon 25 Jan",
+      "cost": "Free"
+     }
+    ],
+    "postcode": "M40 7TF"
+   }
+  },
+  {
+   "part": "MK2F4QN/A",
+   "name": "iPhone Duo 512GB Star White",
+   "storage": "512GB",
+   "colour": "Star White",
+   "price": "£2,199.00",
+   "link": "https://www.apple.com/uk/shop/buy-iphone/iphone-duo/7.6-inch-display-512gb-star-white",
+   "delivery": {
+    "text": "Mon 25 Jan - Free",
+    "options": [
+     {
+      "name": "Express Delivery",
+      "date": "Mon 25 Jan",
+      "cost": "Free"
+     }
+    ],
+    "postcode": "M40 7TF"
+   }
+  },
+  {
+   "part": "MK2H4QN/A",
+   "name": "iPhone Duo 1TB Star White",
+   "storage": "1TB",
+   "colour": "Star White",
+   "price": "£2,599.00",
+   "link": "https://www.apple.com/uk/shop/buy-iphone/iphone-duo/7.6-inch-display-1tb-star-white",
+   "delivery": {
+    "text": "Mon 25 Jan - Free",
+    "options": [
+     {
+      "name": "Express Delivery",
+      "date": "Mon 25 Jan",
+      "cost": "Free"
+     }
+    ],
+    "postcode": "M40 7TF"
+   }
+  },
+  {
+   "part": "MK2K4QN/A",
+   "name": "iPhone Duo 2TB Star White",
+   "storage": "2TB",
+   "colour": "Star White",
+   "price": "£3,199.00",
+   "link": "https://www.apple.com/uk/shop/buy-iphone/iphone-duo/7.6-inch-display-2tb-star-white",
+   "delivery": {
+    "text": "Mon 25 Jan - Free",
+    "options": [
+     {
+      "name": "Express Delivery",
+      "date": "Mon 25 Jan",
+      "cost": "Free"
+     }
+    ],
+    "postcode": "M40 7TF"
+   }
+  }
+ ],
+ "delivery_updated": "2026-10-31T18:00:38+00:00",
+ "delivery_postcode": "M40 7TF",
+ "best_chance": {
+  "overall": {
+   "restocks": 24,
+   "text": "Across all the stores we check, stock usually turns up on Tuesdays, between 7am and 9am (based on 24 restocks).",
+   "pattern": true,
+   "day": "Tuesday",
+   "hours": [
+    7,
+    9
+   ]
+  },
+  "stores": {
+   "R092": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R113": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R118": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R135": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R136": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R153": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R163": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R174": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R176": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R215": {
+    "restocks": 2,
+    "text": "Spotted twice so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R226": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R227": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R239": {
+    "restocks": 2,
+    "text": "Spotted twice so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R242": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R244": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R245": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R255": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R269": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R270": {
+    "restocks": 3,
+    "text": "Grand Arcade usually restocks on Tuesdays, between 8am and 10am (based on 3 restocks).",
+    "pattern": true,
+    "day": "Tuesday",
+    "hours": [
+     8,
+     10
+    ]
+   },
+   "R279": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R308": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R313": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R328": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R329": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R334": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R335": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R340": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R341": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R363": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R372": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R391": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R393": {
+    "restocks": 2,
+    "text": "Spotted twice so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R410": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R423": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R482": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R496": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R527": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   },
+   "R545": {
+    "restocks": 0,
+    "text": "Not enough restocks spotted yet - we'll show the best times once we've seen a few.",
+    "pattern": false
+   },
+   "R762": {
+    "restocks": 1,
+    "text": "Spotted once so far - not enough to see a pattern yet.",
+    "pattern": false
+   }
+  }
+ },
+ "restocking": {
+  "stores": [
+   {
+    "id": "R270",
+    "total": 5,
+    "last": "2026-10-27T08:18:11+00:00",
+    "models": {
+     "MK2D4QN/A": {
+      "count": 3,
+      "last": "2026-10-27T08:18:11+00:00"
+     },
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     },
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     }
+    }
+   },
+   {
+    "id": "R215",
+    "total": 3,
+    "last": "2026-10-30T19:11:15+00:00",
+    "models": {
+     "MK2E4QN/A": {
+      "count": 1,
+      "last": "2026-10-30T19:11:15+00:00"
+     },
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     },
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     }
+    }
+   },
+   {
+    "id": "R393",
+    "total": 3,
+    "last": "2026-10-27T08:54:08+00:00",
+    "models": {
+     "MK2D4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:54:08+00:00"
+     },
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T07:46:31+00:00"
+     },
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T07:46:31+00:00"
+     }
+    }
+   },
+   {
+    "id": "R255",
+    "total": 3,
+    "last": "2026-10-27T08:06:23+00:00",
+    "models": {
+     "MK2D4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:06:23+00:00"
+     },
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:06:23+00:00"
+     },
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:06:23+00:00"
+     }
+    }
+   },
+   {
+    "id": "R269",
+    "total": 3,
+    "last": "2026-10-27T08:01:15+00:00",
+    "models": {
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     },
+     "MK2D4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     },
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     }
+    }
+   },
+   {
+    "id": "R239",
+    "total": 2,
+    "last": "2026-10-27T08:36:46+00:00",
+    "models": {
+     "MK2D4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:36:46+00:00"
+     },
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:06:23+00:00"
+     }
+    }
+   },
+   {
+    "id": "R245",
+    "total": 2,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2L4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     },
+     "MK2K4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R136",
+    "total": 2,
+    "last": "2026-10-27T08:01:15+00:00",
+    "models": {
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     },
+     "MK2K4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     }
+    }
+   },
+   {
+    "id": "R113",
+    "total": 1,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R163",
+    "total": 1,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R227",
+    "total": 1,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R329",
+    "total": 1,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R363",
+    "total": 1,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R391",
+    "total": 1,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R527",
+    "total": 1,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R762",
+    "total": 1,
+    "last": "2026-10-27T08:08:19+00:00",
+    "models": {
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:08:19+00:00"
+     }
+    }
+   },
+   {
+    "id": "R153",
+    "total": 1,
+    "last": "2026-10-27T08:06:23+00:00",
+    "models": {
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:06:23+00:00"
+     }
+    }
+   },
+   {
+    "id": "R118",
+    "total": 1,
+    "last": "2026-10-27T08:01:15+00:00",
+    "models": {
+     "MK2J4QN/A": {
+      "count": 1,
+      "last": "2026-10-27T08:01:15+00:00"
+     }
+    }
+   },
+   {
+    "id": "R335",
+    "total": 1,
+    "last": "2026-10-26T08:40:06+00:00",
+    "models": {
+     "MK2H4QN/A": {
+      "count": 1,
+      "last": "2026-10-26T08:40:06+00:00"
+     }
+    }
+   }
+  ],
+  "quiet": [
+   "R092",
+   "R135",
+   "R174",
+   "R176",
+   "R226",
+   "R242",
+   "R244",
+   "R279",
+   "R308",
+   "R313",
+   "R328",
+   "R334",
+   "R340",
+   "R341",
+   "R372",
+   "R410",
+   "R423",
+   "R482",
+   "R496",
+   "R545"
+  ]
+ },
+ "stores": [
+  {
+   "id": "R215",
+   "name": "Manchester Arndale",
+   "slug": "manchesterarndale",
+   "region": "Greater Manchester",
+   "postcode": "M4 3AJ",
+   "manchester": true,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R136",
+   "name": "Trafford Centre",
+   "slug": "traffordcentre",
+   "region": "Greater Manchester",
+   "postcode": "M17 8BL",
+   "manchester": true,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R363",
+   "name": "Union Square",
+   "slug": "unionsquare",
+   "region": "Aberdeen",
+   "postcode": "AB11 5PN",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R176",
+   "name": "The Oracle",
+   "slug": "theoracle",
+   "region": "Berkshire",
+   "postcode": "RG1 2AG",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R393",
+   "name": "Cribbs Causeway",
+   "slug": "cribbscauseway",
+   "region": "Bristol",
+   "postcode": "BS34 5DG",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R269",
+   "name": "Milton Keynes",
+   "slug": "miltonkeynes",
+   "region": "Buckinghamshire",
+   "postcode": "MK9 3GA",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R270",
+   "name": "Grand Arcade",
+   "slug": "grandarcade",
+   "region": "Cambridgeshire",
+   "postcode": "CB2 3AX",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R334",
+   "name": "Cardiff",
+   "slug": "cardiff",
+   "region": "Cardiff",
+   "postcode": "CF10 2EL",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R329",
+   "name": "Brompton Road",
+   "slug": "bromptonroad",
+   "region": "Central London",
+   "postcode": "SW1X 9LF",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R245",
+   "name": "Covent Garden",
+   "slug": "coventgarden",
+   "region": "Central London",
+   "postcode": "WC2E 8HB",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R092",
+   "name": "Regent Street",
+   "slug": "regentstreet",
+   "region": "Central London",
+   "postcode": "W1B 2EL",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R545",
+   "name": "Plymouth",
+   "slug": "plymouth",
+   "region": "Devon",
+   "postcode": "PL1 1EA",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R279",
+   "name": "Princesshay",
+   "slug": "princesshay",
+   "region": "Devon",
+   "postcode": "EX1 1GE",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R244",
+   "name": "Churchill Square",
+   "slug": "churchillsquare",
+   "region": "East Sussex",
+   "postcode": "BN1 2TE",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R328",
+   "name": "Edinburgh",
+   "slug": "edinburgh",
+   "region": "Edinburgh",
+   "postcode": "EH2 2AN",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R242",
+   "name": "Lakeside",
+   "slug": "lakeside",
+   "region": "Essex",
+   "postcode": "RM20 2ZP",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R340",
+   "name": "Braehead",
+   "slug": "braehead",
+   "region": "Glasgow",
+   "postcode": "G51 4BP",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R135",
+   "name": "Glasgow",
+   "slug": "glasgow",
+   "region": "Glasgow",
+   "postcode": "G1 2JX",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R762",
+   "name": "Battersea",
+   "slug": "battersea",
+   "region": "Greater London",
+   "postcode": "SW11 8AL",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R227",
+   "name": "Bentall Centre",
+   "slug": "bentallcentre",
+   "region": "Greater London",
+   "postcode": "KT1 1TP",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R163",
+   "name": "Brent Cross",
+   "slug": "brentcross",
+   "region": "Greater London",
+   "postcode": "NW4 3FP",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R410",
+   "name": "Stratford City",
+   "slug": "stratfordcity",
+   "region": "Greater London",
+   "postcode": "E20 1EQ",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R226",
+   "name": "White City",
+   "slug": "whitecity",
+   "region": "Greater London",
+   "postcode": "W12 7GF",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R482",
+   "name": "Festival Place",
+   "slug": "festivalplace",
+   "region": "Hampshire",
+   "postcode": "RG21 7BE",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R174",
+   "name": "Southampton",
+   "slug": "southampton",
+   "region": "Hampshire",
+   "postcode": "SO15 1QE",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R527",
+   "name": "Watford",
+   "slug": "watford",
+   "region": "Hertfordshire",
+   "postcode": "WD17 2TN",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R113",
+   "name": "Bluewater",
+   "slug": "bluewater",
+   "region": "Kent",
+   "postcode": "DA9 9ST",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R496",
+   "name": "Bromley",
+   "slug": "bromley",
+   "region": "Kent",
+   "postcode": "BR1 1DN",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R308",
+   "name": "Highcross",
+   "slug": "highcross",
+   "region": "Leicestershire",
+   "postcode": "LE1 4FT",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R239",
+   "name": "Liverpool",
+   "slug": "liverpool",
+   "region": "Merseyside",
+   "postcode": "L1 8BU",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R391",
+   "name": "Norwich",
+   "slug": "norwich",
+   "region": "Norfolk",
+   "postcode": "NR2 1SU",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R313",
+   "name": "Belfast",
+   "slug": "belfast",
+   "region": "Northern Ireland",
+   "postcode": "BT1 4DA",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R335",
+   "name": "SouthGate",
+   "slug": "southgate",
+   "region": "Somerset",
+   "postcode": "BA1 1AP",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R153",
+   "name": "Meadowhall",
+   "slug": "meadowhall",
+   "region": "South Yorkshire",
+   "postcode": "S9 1EN",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R341",
+   "name": "Eldon Square",
+   "slug": "eldonsquare",
+   "region": "Tyne and Wear",
+   "postcode": "NE1 7XD",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R423",
+   "name": "Metrocentre",
+   "slug": "metrocentre",
+   "region": "Tyne and Wear",
+   "postcode": "NE11 9YG",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every hour",
+   "checked_every_minutes": 60,
+   "last_checked": "2026-10-31T17:08:49+00:00"
+  },
+  {
+   "id": "R118",
+   "name": "Birmingham",
+   "slug": "birmingham",
+   "region": "West Midlands",
+   "postcode": "B2 4JH",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R255",
+   "name": "Touchwood Centre",
+   "slug": "touchwoodcentre",
+   "region": "West Midlands",
+   "postcode": "B91 3GJ",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  },
+  {
+   "id": "R372",
+   "name": "Trinity Leeds",
+   "slug": "trinityleeds",
+   "region": "West Yorkshire",
+   "postcode": "LS1 5AR",
+   "manchester": false,
+   "covered": true,
+   "stock": {
+    "MK2J4QN/A": false,
+    "MK2H4QN/A": false,
+    "MK2E4QN/A": false,
+    "MK2D4QN/A": false,
+    "MK2L4QN/A": false,
+    "MK2K4QN/A": false,
+    "MK2G4QN/A": false,
+    "MK2F4QN/A": false
+   },
+   "frequency": "every 5 mins",
+   "checked_every_minutes": 5,
+   "last_checked": "2026-10-31T18:00:38+00:00"
+  }
+ ],
+ "covered_count": 39,
+ "store_count": 39,
+ "history": {
+  "checks": 2444,
+  "nearby_checks": 2348,
+  "far_checks": 96,
+  "since": "2026-10-24T10:51:25+01:00",
+  "restocks": [
+   {
+    "part": "MK2E4QN/A",
+    "store": "R215",
+    "start": "2026-10-30T19:11:15+00:00",
+    "end": "2026-10-30T19:14:02+00:00",
+    "ongoing": false,
+    "minutes": 3,
+    "hourly": false
+   },
+   {
+    "part": "MK2D4QN/A",
+    "store": "R393",
+    "start": "2026-10-27T08:54:08+00:00",
+    "end": "2026-10-27T08:59:42+00:00",
+    "ongoing": false,
+    "minutes": 6,
+    "hourly": false
+   },
+   {
+    "part": "MK2D4QN/A",
+    "store": "R239",
+    "start": "2026-10-27T08:36:46+00:00",
+    "end": "2026-10-27T08:43:38+00:00",
+    "ongoing": false,
+    "minutes": 7,
+    "hourly": false
+   },
+   {
+    "part": "MK2D4QN/A",
+    "store": "R270",
+    "start": "2026-10-27T08:18:11+00:00",
+    "end": "2026-10-27T08:23:16+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R113",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R163",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R227",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2L4QN/A",
+    "store": "R245",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2K4QN/A",
+    "store": "R245",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R329",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R363",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R391",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R527",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R762",
+    "start": "2026-10-27T08:08:19+00:00",
+    "end": "2026-10-27T09:01:44+00:00",
+    "ongoing": false,
+    "minutes": 53,
+    "hourly": true
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R239",
+    "start": "2026-10-27T08:06:23+00:00",
+    "end": "2026-10-27T08:06:27+00:00",
+    "ongoing": false,
+    "minutes": 0,
+    "hourly": false
+   },
+   {
+    "part": "MK2D4QN/A",
+    "store": "R255",
+    "start": "2026-10-27T08:06:23+00:00",
+    "end": "2026-10-27T08:06:27+00:00",
+    "ongoing": false,
+    "minutes": 0,
+    "hourly": false
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R153",
+    "start": "2026-10-27T08:06:23+00:00",
+    "end": "2026-10-27T08:10:23+00:00",
+    "ongoing": false,
+    "minutes": 4,
+    "hourly": false
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R255",
+    "start": "2026-10-27T08:06:23+00:00",
+    "end": "2026-10-27T08:10:23+00:00",
+    "ongoing": false,
+    "minutes": 4,
+    "hourly": false
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R255",
+    "start": "2026-10-27T08:06:23+00:00",
+    "end": "2026-10-27T08:10:23+00:00",
+    "ongoing": false,
+    "minutes": 4,
+    "hourly": false
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R136",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R215",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R118",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R269",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R270",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R215",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R270",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2D4QN/A",
+    "store": "R269",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2D4QN/A",
+    "store": "R270",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2K4QN/A",
+    "store": "R136",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:06:23+00:00",
+    "ongoing": false,
+    "minutes": 5,
+    "hourly": false
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R269",
+    "start": "2026-10-27T08:01:15+00:00",
+    "end": "2026-10-27T08:10:23+00:00",
+    "ongoing": false,
+    "minutes": 9,
+    "hourly": false
+   },
+   {
+    "part": "MK2J4QN/A",
+    "store": "R393",
+    "start": "2026-10-27T07:46:31+00:00",
+    "end": "2026-10-27T07:49:33+00:00",
+    "ongoing": false,
+    "minutes": 3,
+    "hourly": false
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R393",
+    "start": "2026-10-27T07:46:31+00:00",
+    "end": "2026-10-27T07:49:33+00:00",
+    "ongoing": false,
+    "minutes": 3,
+    "hourly": false
+   },
+   {
+    "part": "MK2H4QN/A",
+    "store": "R335",
+    "start": "2026-10-26T08:40:06+00:00",
+    "end": "2026-10-26T08:42:13+00:00",
+    "ongoing": false,
+    "minutes": 2,
+    "hourly": false
+   },
+   {
+    "part": "MK2D4QN/A",
+    "store": "R270",
+    "start": "2026-10-25T09:15:22+00:00",
+    "end": "2026-10-25T09:22:31+00:00",
+    "ongoing": false,
+    "minutes": 7,
+    "hourly": false
+   }
+  ],
+  "by_hour": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   30,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "by_day": {
+   "Mon": 1,
+   "Tue": 31,
+   "Wed": 0,
+   "Thu": 0,
+   "Fri": 1,
+   "Sat": 0,
+   "Sun": 1
+  },
+  "median_minutes_in_stock": 5
+ }
+}
